@@ -1,1 +1,1 @@
-Implementing data structures through javascript classes.
+Implementing DATA STRUCTURES through **#JAVASCRIPT** classes.
