@@ -31,6 +31,7 @@
         5. printListData  ----> DONE
         6. showListSize  ----> DONE
         7. getAnIndex  ----> DONE
+        8. clearList ----> DONE
 
 */
 
@@ -127,9 +128,14 @@ class LinkedList {
 
 
 
+    // CLEAR WHOLE LIST
+
+    clearList(){
+        this.head = null;
+        this.size = 0;
+    }
 
     // GET THE VALUE OF NODE AT THE GIVEN INDEX
-
     getIndexValue(index) {
         if (!this.head || (index > this.size) || (this.size == 0)) {
             console.log("INVALID INDEX");
