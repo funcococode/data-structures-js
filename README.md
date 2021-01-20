@@ -1,5 +1,7 @@
 Implementing **DATA STRUCTURES** through **#JAVASCRIPT** classes.
 
-## Stacks
-## Queues
-## Linked Lists
+* ## [x] Stacks
+* ## [x] Queues
+* ## Linked Lists
+   * ### [x] Singly Linked List
+   * ### [] Doubly Linked List
