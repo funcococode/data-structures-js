@@ -11,9 +11,7 @@ class Queue{
     }
 
     remove(){
-        let returnValue = this.arr[this.head];
-        this.arr[this.head] = null;
-        ++this.head;
+        let returnValue = this.arr.shift();
         return returnValue;
     }
 
@@ -22,7 +20,7 @@ class Queue{
     }
 
     showAll(){
-        return this.arr;
+        this.arr.forEach(elem => console.log(elem));
     }
 }
 
@@ -33,8 +31,8 @@ q.add(5);
 q.add(15);
 q.remove();
 
-q.add(20)
-q.add(122)
-console.log(q.remove());
-console.log(q.peek());
+q.add(20);
+q.add(122);
+q.remove();
+console.log("The head is : ", q.peek());
 console.log(q.showAll());

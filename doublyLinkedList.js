@@ -10,7 +10,7 @@ class DoublyLL{
             this.head = new Node(data, null, this.head);
             this.size++;
         }else{
-            const newNode = new Node(data, null, this.head)
+            const newNode = new Node(data, null, this.head);
             this.head.prevNode = newNode;
             this.head = newNode;
             this.size++;
@@ -75,7 +75,7 @@ class DoublyLL{
             return;
         }
         if(index < 0 || index > this.size){
-            console.log("INVALID INDEX.")
+            console.log("INVALID INDEX.");
             return;
         }
         if(index == this.size){
@@ -114,7 +114,7 @@ class DoublyLL{
             return;
         }
         if(index < 0 || index > this.size){
-            console.log("INVALID INDEX.")
+            console.log("INVALID INDEX.");
             return;
         }
         if(index == this.size){
