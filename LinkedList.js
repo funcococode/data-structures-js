@@ -42,7 +42,6 @@ class Node {
         this.next = next;
     }
 }
-
 class LinkedList {
     constructor() {
         this.head = null;
@@ -110,6 +109,11 @@ class LinkedList {
     removeFrom(index){
         if(!this.head || index < 0 || index > this.size){
             console.log("wrong");
+        }else if(index == 0){
+            let nextNode = this.head.next;
+            this.head.next = null;
+            this.head = nextNode;
+            this.size--;
         }else{
             let count = 1;
             let current = this.head;
@@ -164,6 +168,10 @@ class LinkedList {
 
     // PRINTING THE LINKED LIST 
     printListData() {
+        if(!this.head){
+            console.log("Empty")
+            return;
+        }
         let currentNode = this.head;
 
         while (currentNode) {
@@ -173,16 +181,7 @@ class LinkedList {
     }
 }
 
-let list = new LinkedList();
-list.insertAtHead("Hello");  //2
-list.insertAtTail("World"); //4
-list.insertAtHead("Fuck Yeah!"); //1
-list.insertAtTail("It's running!"); //5
-list.insertAt("Beautiful", 2); //3
-
-list.removeFrom(4);
-list.printListData();
-
-// list.getSize();
-// list.getIndexValue(2);
-
+module.exports = { 
+    LinkedList,
+    Node
+}
