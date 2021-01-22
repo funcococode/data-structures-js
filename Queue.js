@@ -31,7 +31,7 @@ let q = new Queue();
 q.add(2);
 q.add(5);
 q.add(15);
-q.remove()
+q.remove();
 
 q.add(20)
 q.add(122)
